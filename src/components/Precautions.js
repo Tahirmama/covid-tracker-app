@@ -7,6 +7,7 @@ import Blink from 'react-blink-text';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        alignItems:"center"
     },
     paper: {
         padding: theme.spacing(2),
@@ -25,8 +26,9 @@ export default function Prevention() {
 
     return (
         <div className={classes.root}>    
-        <br/>
-        <h1 align="center " className={classes.top}>     <Blink color='#405d27' text="PREVENTIONS">
+        <h1 align="center " className={classes.top}>    
+        <img src="https://www.pinclipart.com/picdir/big/413-4130584_outsourced-utilities-long-term-relationships-icon-prevention-icon.png" alt="Prevention" title = "Prevention" height="120px" width="120px"/>
+         <Blink color='#405d27' text="PREVENTIONS">
             </Blink> </h1>
             <br/>
             <Grid container spacing={2}>

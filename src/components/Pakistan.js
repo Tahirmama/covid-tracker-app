@@ -21,13 +21,15 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 10,
         textTransform: 'uppercase',
         letterSpacing: 2,
-        borderBottom:"14px solid #405d27",
+        borderBottom: "14px solid #405d27",
+        boxShadow:"3px 0px 2px 3px green"
 
 
 
     },
     top: {
         fontSize: 40,
+        align:"center"
 
     },
     title: {
@@ -55,15 +57,19 @@ export default function GlobData() {
 
     return (
         <div className={classes.root}>
-            <h1 align="center " className={classes.top}>     <Blink color='#405d27' text='GLOBAL COVID DATA' fontSize='20'>
-            </Blink> </h1>
+
+            <h1 align="center " className={classes.top}>
+                <img src="https://lh3.googleusercontent.com/proxy/90KvheLu4avpApDLUcOrEp4j963pjJ02QZQugy0FTgxBVuPA88bpCH__4Og1vgkl_gQPsUDTXPWxqABG-lZZf7pwZ17uEnGLHj5k" height="100px" width="100px" />
+                <Blink color='#405d27' text='GLOBAL COVID DATA' >
+
+                </Blink> </h1>
             <Grid container spacing={3}>
                 {Object.keys(globalData).map((key, ind) => {
                     return (
                         <Grid item xs={12} sm={4} key={ind} >
                             <Paper
                                 className={classes.paper}
-                                elevation={12}>
+                                elevation={5}>
                                 <h3 className={classes.title}>
                                     {key}
                                 </h3>
