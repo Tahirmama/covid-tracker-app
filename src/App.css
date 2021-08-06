@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 25px auto;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .container{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container{
+    width: 100%;
+  }
+}
+
+.foot{
+  color: white;
+  background-color:#82b74b;
+}
+.header1{
+  height: 300px;
+}
+.link{
+  color:white
+ 
+}
+.link:hover{
+  color: red;
+}
