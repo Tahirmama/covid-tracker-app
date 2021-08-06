@@ -1,4 +1,4 @@
-import React from 'react';
++import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import img from "./Covid_.png"
@@ -37,11 +37,9 @@ const useStyles = makeStyles((theme) => ({
     width: 100,
     padding: 10,
 
-   
 
 
   },
-
 
 }));
 
@@ -67,7 +65,7 @@ export default function Header() {
     <div className={classes.root}>
       <AppBar position="static" style={{ background: '#82b74b' }}>
         <Toolbar>
-          <img src={img} alt="CovidLogo" className={classes.pic}  alt="Covid logo" title="covid-19"/>
+          <img src={img} alt="CovidLogo" className={classes.pic}  title="covid-19"/>
           <Typography className={classes.title} variant="h3" noWrap >
             COVID-19 APP
           </Typography>
