@@ -36,9 +36,17 @@ const useStyles = makeStyles((theme) => ({
     height: 100,
     width: 100,
     padding: 10,
-    marginLeft: 450,
+    alignItems: "center",
+    display: "flex",
+     justifyContent: "center"
+   
 
 
+  },
+  pic1:{
+    alignItems: "center",
+    display: "flex",
+     justifyContent: "center"
   },
 
 }));
@@ -65,8 +73,8 @@ export default function Header() {
     <div className={classes.root}>
       <AppBar position="static" style={{ background: '#82b74b' }}>
         <Toolbar>
-          <img src={img} alt="CovidLogo" className={classes.pic}  title="covid-19"/>
-          <Typography className={classes.title} variant="h3" noWrap >
+          <img src={img} alt="CovidLogo" className={classes.pic}  alt="Covid logo" title="covid-19"/>
+          <Typography className={classes.title} variant="h3" noWrap title="covidApp">
             COVID-19 APP
           </Typography>
           <h3>
