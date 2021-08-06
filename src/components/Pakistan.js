@@ -59,7 +59,7 @@ export default function GlobData() {
         <div className={classes.root}>
 
             <h1 align="center " className={classes.top}>
-                <img src="https://lh3.googleusercontent.com/proxy/90KvheLu4avpApDLUcOrEp4j963pjJ02QZQugy0FTgxBVuPA88bpCH__4Og1vgkl_gQPsUDTXPWxqABG-lZZf7pwZ17uEnGLHj5k" height="100px" width="100px" />
+                <img src="https://lh3.googleusercontent.com/proxy/90KvheLu4avpApDLUcOrEp4j963pjJ02QZQugy0FTgxBVuPA88bpCH__4Og1vgkl_gQPsUDTXPWxqABG-lZZf7pwZ17uEnGLHj5k" height="100px" width="100px" alt="Globe" title="Earth"/>
                 <Blink color='#405d27' text='GLOBAL COVID DATA' >
 
                 </Blink> </h1>
