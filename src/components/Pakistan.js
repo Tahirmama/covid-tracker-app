@@ -71,9 +71,9 @@ export default function GlobData() {
                                 className={classes.paper}
                                 elevation={5}>
                                 <h3 className={classes.title}>
-                                    {key}
+                                     {key}                         {/*  values print krmna ka liya */}
                                 </h3>
-                                <h3>{globalData[key]}</h3>
+                                <h3>{globalData[key]}</h3>          {/*name print krna ka liya*/}
 
                             </Paper>
                         </Grid>

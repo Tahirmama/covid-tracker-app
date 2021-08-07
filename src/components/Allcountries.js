@@ -40,8 +40,8 @@ export default function AllCountries() {
             const response = await fetch("https://api.covid19api.com/summary");
             let data = await response.json();
 
-            setGlobalData(Object.values(Object.values(data.Countries)));
-            console.log(Object.values(Object.values(data.Countries)))
+            setGlobalData(data.Countries);
+            // console.log(data.Countries);
         }
         getData();
     }, []);
@@ -59,7 +59,6 @@ export default function AllCountries() {
                     <tr >
                         <th className={classes.head}> Country Name</th>
                     
-               
                         <th className={classes.head}>Total Cases</th>
                        
                         <th className={classes.head}>Total Deaths</th>
